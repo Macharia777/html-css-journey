@@ -121,6 +121,15 @@ li{
     margin:0 1em;
 }
 
+nav ul li a{
+    text-decoration: none;
+    color: #707070;
+}
+
+nav a:hover{
+    color:#1792d2;
+}
+
 /* Targeting the li element when the screen changes */
 @media (max-width:961px){
     @media(max-width:961px){

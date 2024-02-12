@@ -1,0 +1,100 @@
+html{
+    font-size: 16px;
+}
+
+body{
+    margin:0px;
+}
+
+header{
+    /* text-align: center; */
+    /* background:rgb(165, 234, 255); */
+    margin:0.75em auto;
+    width:98%;
+    background:rgb(230, 228, 228);
+    padding:1em 0;
+}
+
+.container{
+    width: 90%;
+    max-width: 900px;
+    /* border:1px solid magenta; */
+    margin:0 auto;
+    align-items: center;
+}
+
+
+.site-title{
+      text-align: center;
+}
+
+h1{
+    font-family: "Lora", serif;
+    font-weight:400;
+    color:#143774;
+    font-size:2rem;
+    margin:0px;
+}
+
+
+.substitute{
+    margin:0px;
+    font-size: .85rem;
+}
+
+.substitute p {
+    margin:0px;
+    font-family: "ubuntu";
+    font-weight: 600;
+    color: #1792d2;
+}
+
+
+.container-nav {
+    display:flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    padding:0;
+}
+
+nav li {
+margin-left:2em;
+font-family: "ubuntu";
+letter-spacing:0.15em;
+/* text-align: center; */
+}
+
+nav a {
+    text-decoration: none;
+    color:#707070;
+    font-weight: 700;
+    padding:.25em 0;
+}
+
+nav li a:hover{
+    text-decoration: underline;
+    text-underline-offset: 0.4em;
+}
+
+@media (max-width:675px){
+    header{
+        text-align: center;
+    }
+    .container-nav{
+        /* display: flex; */
+        flex-direction: column;
+    }
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    nav li{
+        padding-bottom:0.5em;
+      
+    }
+}
