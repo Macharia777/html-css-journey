@@ -1,0 +1,131 @@
+html{
+    font-size: 14px;
+    margin:0;
+}
+
+body{
+    background: rgb(241, 241, 241);
+    margin: 0px;
+}
+
+/* Header CSS */
+header{
+    width:98%;
+    /* border:2px solid rgba(255, 192, 203, 0.733); */
+    margin:1em auto;    
+}
+
+/* Header-title CSS */
+.header-title{
+    margin:0 auto;
+    padding:0.85em;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Editing the H1 tag default */
+h1{
+    font-family: 'Lora', serif;
+    font-weight: 100;
+    margin: 0 auto;
+    padding:.25em;
+}
+
+/* Targeting the p tag */
+header p{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
+    margin-bottom: 0.2em;
+    color:#1792d2;
+    margin:0 auto;
+    padding:0.25em;
+}
+
+/* Response when screen stretches from 0 to 961 */
+@media(min-width:961px){
+
+    header{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        text-align: center;
+        margin:0 auto;
+        height:100%;
+    }
+
+    header h1{
+        text-align: center;
+        line-height: none;
+        width:100%;
+    }
+    header p{
+        text-align: center;
+        width:80%;
+        color:#1792d2;
+    }
+}
+
+@media (max-width:960px){
+    h1{
+        color:black;
+        text-align: center;
+    }
+    header p{
+       width:75%;
+       text-align: center;
+    }
+}
+
+@media (max-width:312px){
+    nav{
+        width:100%;
+    }
+    
+    h1{
+        color:black;
+    }
+    ul{
+        margin: 0 auto;
+    }
+}
+
+/* Targeting the navigation bar */
+nav{
+    margin: 0 auto;
+    /* border: 1px solid red; */
+    width:50%;
+    justify-content: center;
+}
+
+/* Targeting the navigation ul element */
+ul{
+    margin:0 1em;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.25em 1.5em 0;
+    /* border: 1px solid pink; */
+    /* background-color: aqua; */
+}
+
+/* Targeting the li of the ul element */
+li{
+    padding:0.5em;
+    list-style-type:none;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.125em;
+    color:#707070;
+    margin:0 1em;
+}
+
+/* Targeting the li element when the screen changes */
+@media (max-width:961px){
+    @media(max-width:961px){
+        li{
+            text-align: center;
+        }
+    }
+}

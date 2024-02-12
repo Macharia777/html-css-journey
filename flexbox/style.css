@@ -1,0 +1,116 @@
+/* *,
+*::before,
+*::after {
+  box-sizing: border-box;
+} */
+
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: #505050;
+  font-size: 1.125rem;
+  line-height: 1.25em;
+  margin: 0;
+}
+
+/* from a minimum width of 400px and bigger */
+@media (min-width:650px){
+  main .text-accent{
+    color: rgba(226, 106, 51, 0.658);
+  }
+}
+
+@media (max-width:920px){
+  main h1{
+    color:black;
+    padding:0.1em;
+    text-align: center;
+    line-height: 1em;
+  }
+
+}
+
+@media (max-width:600px){
+  body{
+    background-color: rgba(233, 233, 233, 0.3);
+  }
+  main .text-accent{
+    color:rgb(241, 186, 123);
+  }
+  .columns {
+    flex-direction: column;
+  }
+}
+
+/* Typography */
+h1 {
+  font-size: 3rem;
+  color: #312614;
+  text-align: center;
+  width:100%;
+}
+
+.text-accent {
+  color: #e7e7e7;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+p {
+  margin-top: 0;
+}
+
+/* layout */
+img {
+  max-width: 100%; /* so doesn't get bigger than intended*/ /*helps to avoid side scrolling*/
+}
+
+.container {
+  width: 95%;
+  max-width: 980px;
+  min-width: 400px;
+  margin: 0 auto;
+
+}
+
+.columns {
+  margin:1em 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.col-1{
+  width:20%;
+}
+
+.col-2{
+  width:45%;
+}
+
+.col-3{
+  width:70%;
+}
+
+@media (max-width: 600px){
+  .col-1,
+  .col-2,
+  .col-3 {
+    width:100%;
+    padding:0em 0em 2em 0em;
+  }
+  .columns{
+    flex-direction: column;
+  }
+
+}
+
+
+.col-bg{
+  background: #212614;
+  color: fff;
+  padding: 1em;
+}
+
