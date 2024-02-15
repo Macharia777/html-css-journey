@@ -4,6 +4,8 @@ html{
 
 body{
     margin:0px;
+    font-size: 1.125rem;
+    font-weight: 300;
 }
 
 header{
@@ -28,6 +30,14 @@ header{
       text-align: center;
 }
 
+h1,
+h2,
+h3 {
+    font-family: "Lora", serif;
+    font-weight: 400;
+    color:#143774;
+}
+
 h1{
     font-family: "Lora", serif;
     font-weight:400;
@@ -36,6 +46,18 @@ h1{
     margin:0px;
 }
 
+a {
+    color:#1792d2;
+}
+
+a:hover,
+a:focus {
+    color:#143774;
+}
+
+strong {
+    font-weight:700;
+}
 
 .substitute{
     margin:0px;
@@ -49,6 +71,26 @@ h1{
     color: #1792d2;
 }
 
+.article-title{
+    font-size: 1.5rem;
+}
+
+.article-read-more,
+.article-info {
+    font-size: 0.875rem;
+}
+
+.article-read-more {
+    color: #1792d2;
+    text-decoration: none;
+    font-weight: 700;
+}
+.article-read-more:hover,
+.article-read-more:focus {
+    color: #143774;
+    text-decoration: underline;
+    
+}
 
 .container-nav {
     display:flex;
